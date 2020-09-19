@@ -1,0 +1,203 @@
+@import "./content";
+$brandText: "Cinzel", serif;
+$mainLinkText: "Raleway", sans-serif;
+$elYazisi: "Sacramento", cursive;
+//ps fon adı amithen
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.section2 {
+  background: url(/assets/woman2.jpg);
+  background-position-x: inherit !important;
+}
+.section1 {
+  background: url(/assets/woman1.jpg);
+}
+.section {
+  height: 100vh;
+  width: 100%;
+
+  background-size: cover;
+  background-position-x: center;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+.bg-myVar {
+  opacity: 1;
+  background-color: RGBA(255, 255, 255, 0.04) !important;
+}
+.navbarUl {
+  margin-left: auto;
+  li {
+    font-family: "Raleway", sans-serif;
+  }
+}
+.navbar-brand {
+  font-family: $brandText;
+  font-size: 24px;
+}
+.navSearch {
+  border: none;
+  border-bottom: 1px solid #ced4da;
+
+  &:focus {
+    color: black !important;
+    background-color: transparent !important;
+    border-color: unset !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+  }
+}
+.form-inline {
+  padding-right: 75px;
+  i {
+    color: #ced4da;
+  }
+  div {
+    align-items: center;
+    display: flex;
+  }
+}
+
+.navbar-toggler {
+  margin-right: auto;
+}
+
+.shopCartIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px 30px 0px 20px;
+  i {
+    font-size: 25px;
+    color: #ced4da;
+  }
+}
+
+//menu dropdown hover
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 650px;
+  height: 60vh;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  .subHeaders {
+    display: flex;
+    justify-content: space-around;
+
+    li {
+      text-decoration: none;
+      list-style: none;
+      padding-top: 10px;
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-family: $mainLinkText;
+      }
+    }
+  }
+  .subHeadersImg {
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+#newest {
+  background-image: url(/assets/clothesaski.jpg);
+}
+#beach {
+  background-image: url(/assets/beach.jpg);
+}
+#lingerie {
+  background-image: url(/assets/lingerie.jpg);
+}
+.Mydropdown:hover .dropdown-content {
+  display: block;
+}
+
+//tre deneme
+
+.nested {
+  display: none;
+}
+
+@media only screen and (max-width: 400px) {
+  .section2 {
+    background: url(/assets/woman2portrait.jpg);
+  }
+  .section1 {
+    background: url(/assets/woman1portrait.jpg);
+  }
+  .section {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .Mydropdown:hover .dropdown-content {
+    display: none;
+  }
+
+  .caret {
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+  }
+
+  .caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+  }
+
+  .caret-down::before {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg);
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .dropdown-content {
+    width: 55vw;
+    height: 300px;
+    overflow: auto;
+  }
+  .dropdownOnClick {
+    display: block !important;
+    animation: fadeIn 1s;
+  }
+
+  .dropdown-content .subHeaders {
+    display: block;
+  }
+
+  .subHeadersImg {
+    display: none;
+  }
+}
