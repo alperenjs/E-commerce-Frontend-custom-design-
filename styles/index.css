@@ -75,27 +75,37 @@
   scroll-behavior: smooth;
 }
 
-.section2 {
+.kidSection .section1.section {
+  background: url(/assets/kids2.jpg);
+  background-position-x: left !important;
+}
+
+.kidSection .section2.section {
+  background: url(/assets/kids1.jpg);
+  background-position-x: center !important;
+}
+
+.manSection .section1.section {
+  background: url(/assets/woman1.jpg);
+}
+
+.manSection .section2.section {
   background: url(/assets/woman2.jpg);
   background-position-x: inherit !important;
 }
 
-.section1 {
-  background: url(/assets/woman1.jpg);
-}
-
 .section {
-  height: 100vh;
-  width: 100%;
-  background-size: cover;
-  background-position-x: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-repeat: no-repeat;
+  height: 100vh !important;
+  width: 100% !important;
+  background-size: cover !important;
+  background-position-x: center !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  background-repeat: no-repeat !important;
 }
 
 .bg-myVar {
@@ -225,16 +235,23 @@
 }
 
 @media only screen and (max-width: 400px) {
-  .section2 {
-    background: url(/assets/woman2portrait.jpg);
+  .section {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position-y: bottom !important;
   }
-  .section1 {
+  .kidSection .section1.section {
+    background: url(/assets/kids2portrait.jpg);
+  }
+  .kidSection .section2.section {
+    background: url(/assets/kid1portrait.jpg);
+  }
+  .manSection .section1.section {
     background: url(/assets/woman1portrait.jpg);
   }
-  .section {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
+  .manSection .section2.section {
+    background: url(/assets/woman2portrait.jpg);
+    background-position-x: inherit !important;
   }
 }
 
@@ -295,6 +312,44 @@
   }
   .subHeadersImg {
     display: none;
+  }
+}
+
+.page2 {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: red;
+}
+
+.slide-in {
+  -webkit-animation: slide-in 0.5s ease forwards;
+          animation: slide-in 0.5s ease forwards;
+}
+
+@-webkit-keyframes slide-in {
+  from {
+    -webkit-transition: translateX(100%);
+    transition: translateX(100%);
+    visibility: visible;
+  }
+  to {
+    -webkit-transition: translateX(0%);
+    transition: translateX(0%);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    -webkit-transition: translateX(100%);
+    transition: translateX(100%);
+    visibility: visible;
+  }
+  to {
+    -webkit-transition: translateX(0%);
+    transition: translateX(0%);
   }
 }
 /*# sourceMappingURL=index.css.map */

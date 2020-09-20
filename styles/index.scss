@@ -2,6 +2,7 @@
 $brandText: "Cinzel", serif;
 $mainLinkText: "Raleway", sans-serif;
 $elYazisi: "Sacramento", cursive;
+
 //ps fon adı amithen
 
 * {
@@ -9,23 +10,36 @@ $elYazisi: "Sacramento", cursive;
   padding: 0;
   scroll-behavior: smooth;
 }
+.kidSection {
+  .section1.section {
+    background: url(/assets/kids2.jpg);
+    background-position-x: left !important;
+  }
+  .section2.section {
+    background: url(/assets/kids1.jpg);
+    background-position-x: center !important;
+  }
+}
 
-.section2 {
-  background: url(/assets/woman2.jpg);
-  background-position-x: inherit !important;
+.manSection {
+  .section1.section {
+    background: url(/assets/woman1.jpg);
+  }
+  .section2.section {
+    background: url(/assets/woman2.jpg);
+    background-position-x: inherit !important;
+  }
 }
-.section1 {
-  background: url(/assets/woman1.jpg);
-}
+
 .section {
-  height: 100vh;
-  width: 100%;
+  height: 100vh !important;
+  width: 100% !important;
 
-  background-size: cover;
-  background-position-x: center;
-  justify-content: center;
-  align-items: center;
-  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-position-x: center !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background-repeat: no-repeat !important;
 }
 
 .bg-myVar {
@@ -136,16 +150,29 @@ $elYazisi: "Sacramento", cursive;
 }
 
 @media only screen and (max-width: 400px) {
-  .section2 {
-    background: url(/assets/woman2portrait.jpg);
-  }
-  .section1 {
-    background: url(/assets/woman1portrait.jpg);
-  }
   .section {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position-y: bottom !important;
+  }
+
+  .kidSection {
+    .section1.section {
+      background: url(/assets/kids2portrait.jpg);
+    }
+    .section2.section {
+      background: url(/assets/kid1portrait.jpg);
+    }
+  }
+
+  .manSection {
+    .section1.section {
+      background: url(/assets/woman1portrait.jpg);
+    }
+    .section2.section {
+      background: url(/assets/woman2portrait.jpg);
+      background-position-x: inherit !important;
+    }
   }
 }
 
@@ -199,5 +226,27 @@ $elYazisi: "Sacramento", cursive;
 
   .subHeadersImg {
     display: none;
+  }
+}
+
+//
+.page2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: red;
+}
+
+.slide-in {
+  animation: slide-in 0.5s ease forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transition: translateX(100%);
+    visibility: visible;
+  }
+  to {
+    transition: translateX(0%);
   }
 }
