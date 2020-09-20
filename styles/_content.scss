@@ -1,27 +1,28 @@
-.content {
-  display: flex;
-  position: relative;
+// .content {
+//   display: flex;
+//   position: relative;
+//   top: 50%;
+.arrows {
   top: 50%;
-  .arrows {
-    position: fixed;
-    width: 100%;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    padding: 0 15px 0 15px;
-  }
-  .arrowLeft {
-    text-align: center;
-    align-items: center;
-  }
-  i {
-    font-size: 24px;
-  }
-  span {
-    font-size: 24px;
-    font-weight: 600;
-  }
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 0 15px 0 15px;
 }
+.arrowLeft {
+  text-align: center;
+  align-items: center;
+}
+i {
+  font-size: 20px;
+}
+span {
+  font-size: 20px;
+  font-weight: 600;
+}
+// }
 
 .tabsMini {
   display: none;
@@ -40,7 +41,7 @@
 }
 
 @media only screen and (max-width: 571px) {
-  .content {
+  .arrows {
     display: none;
   }
   .tabsMini {

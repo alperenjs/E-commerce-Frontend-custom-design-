@@ -1,12 +1,5 @@
-.content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
+.arrows {
   top: 50%;
-}
-
-.content .arrows {
   position: fixed;
   width: 100%;
   -webkit-box-pack: justify;
@@ -21,19 +14,19 @@
   padding: 0 15px 0 15px;
 }
 
-.content .arrowLeft {
+.arrowLeft {
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.content i {
-  font-size: 24px;
+i {
+  font-size: 20px;
 }
 
-.content span {
-  font-size: 24px;
+span {
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -59,7 +52,7 @@
 }
 
 @media only screen and (max-width: 571px) {
-  .content {
+  .arrows {
     display: none;
   }
   .tabsMini {
@@ -69,10 +62,152 @@
   }
 }
 
+.tabs span {
+  color: black;
+}
+
+.section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.section1 h4 {
+  color: white;
+  font-family: "Archivo Black", sans-serif !important;
+  font-size: 70px;
+}
+
+.section1 h4 span {
+  font-family: "Archivo Black", sans-serif !important;
+  font-size: 70px;
+  color: black;
+}
+
+.section1 p {
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+
+.section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.section2 h4 {
+  color: black;
+  font-family: "Archivo Black", sans-serif !important;
+  font-size: 70px;
+}
+
+.section2 h4 span {
+  font-family: "Archivo Black", sans-serif !important;
+  font-size: 70px;
+  color: black;
+}
+
+.section2 p {
+  font-family: "Raleway", sans-serif;
+  color: black;
+}
+
+.text button {
+  font-family: "Archivo Black", sans-serif;
+  padding: 5px 20px 5px 20px;
+  background: transparent;
+  border: 2px solid black;
+}
+
+.main {
+  padding: 40px 0 40px 0;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .productsHeader h4 {
+  padding: 40px 0 40px 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.main .productVitrin {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  grid-gap: 1rem;
+  cursor: pointer;
+}
+
+.main .productVitrin .card {
+  position: unset !important;
+  border: none !important;
+  padding-bottom: 15p !important;
+  margin: auto;
+}
+
+.sliderWrapper {
+  padding-top: 40px;
+  width: 75vw;
+  margin: auto;
+}
+
+.sliderWrapper .sliderContents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.sliderWrapper .sliderContents:active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+
+.sliderWrapper .sliderContents .card1 {
+  padding: 5px 15px 5px 15px;
+}
+
+.sliderWrapper .sliderContents .card1 .card-img-top {
+  width: 200px !important;
+}
+
+.card-body p {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .section2 p {
+    color: white;
+  }
+  .section2 .text button {
+    border: 2px solid gray;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+}
+
+* ::-webkit-scrollbar {
+  width: 5px;
+}
+
+* ::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 10px;
 }
 
 .kidSection .section1.section {
@@ -85,13 +220,23 @@
   background-position-x: center !important;
 }
 
-.manSection .section1.section {
+.womanSection .section1.section {
   background: url(/assets/woman1.jpg);
 }
 
-.manSection .section2.section {
+.womanSection .section2.section {
   background: url(/assets/woman2.jpg);
-  background-position-x: inherit !important;
+  background-position-x: left !important;
+}
+
+.manSection .section1.section {
+  background: url(/assets/men2.jpg);
+  background-position-x: left !important;
+}
+
+.manSection .section2.section {
+  background: url(/assets/man1.jpg);
+  background-position-x: center !important;
 }
 
 .section {
@@ -121,12 +266,17 @@
   font-family: "Raleway", sans-serif;
 }
 
+.navbarUl li a {
+  color: black !important;
+}
+
 .navbar-brand {
   font-family: "Cinzel", serif;
   font-size: 24px;
 }
 
 .navSearch {
+  background-color: transparent !important;
   border: none;
   border-bottom: 1px solid #ced4da;
 }
@@ -246,11 +396,18 @@
   .kidSection .section2.section {
     background: url(/assets/kid1portrait.jpg);
   }
-  .manSection .section1.section {
+  .womanSection .section1.section {
     background: url(/assets/woman1portrait.jpg);
   }
-  .manSection .section2.section {
+  .womanSection .section2.section {
     background: url(/assets/woman2portrait.jpg);
+    background-position-x: inherit !important;
+  }
+  .manSection .section1.section {
+    background: url(/assets/men2port.jpg);
+  }
+  .manSection .section2.section {
+    background: url(/assets/man1port.jpg);
     background-position-x: inherit !important;
   }
 }
@@ -351,5 +508,15 @@
     -webkit-transition: translateX(0%);
     transition: translateX(0%);
   }
+}
+
+.tabs a {
+  color: white;
+  text-decoration: none;
+}
+
+.arrows a {
+  color: black;
+  text-decoration: none;
 }
 /*# sourceMappingURL=index.css.map */

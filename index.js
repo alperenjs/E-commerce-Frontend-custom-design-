@@ -45,6 +45,9 @@ for (i = 0; i < toggler.length; i++) {
       $("html,body").animate({
         scrollTop: a[i].offsetTop,
       });
+      console.clear();
+    } else {
+      console.clear();
     }
   });
 })();
@@ -97,8 +100,9 @@ var FadeTransition = Barba.BaseTransition.extend({
        * Do not forget to call .done() as soon your transition is finished!
        * .done() will automatically remove from the DOM the old Container
        */
-      window.scrollTo(0, 0);
+
       _this.done();
+      location.reload();
     });
   },
 });
@@ -111,6 +115,37 @@ Barba.Pjax.getTransition = function () {
    * Here you can use your own logic!
    * For example you can use different Transition based on the current page or link...
    */
+  window.scrollTo(0, 0);
   return FadeTransition;
 };
 //BARBA
+
+//slider-arrow-deneme
+const slider = document.querySelector(".sliderContents");
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener("mousedown", (e) => {
+  isDown = true;
+  slider.classList.add("active");
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener("mouseleave", () => {
+  isDown = false;
+  slider.classList.remove("active");
+});
+slider.addEventListener("mouseup", () => {
+  isDown = false;
+  slider.classList.remove("active");
+});
+slider.addEventListener("mousemove", (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX) * 3; //scroll-fast
+  slider.scrollLeft = scrollLeft - walk;
+  console.log(walk);
+});
+//slider-arrow-deneme

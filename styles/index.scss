@@ -1,14 +1,17 @@
 @import "./content";
-$brandText: "Cinzel", serif;
-$mainLinkText: "Raleway", sans-serif;
-$elYazisi: "Sacramento", cursive;
-
-//ps fon adı amithen
-
+@import "./section1";
+@import "./var"; //ps fon adı amithen
 * {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: lightgray;
+    border-radius: 10px;
+  }
 }
 .kidSection {
   .section1.section {
@@ -21,20 +24,29 @@ $elYazisi: "Sacramento", cursive;
   }
 }
 
-.manSection {
+.womanSection {
   .section1.section {
     background: url(/assets/woman1.jpg);
   }
   .section2.section {
     background: url(/assets/woman2.jpg);
-    background-position-x: inherit !important;
+    background-position-x: left !important;
+  }
+}
+.manSection {
+  .section1.section {
+    background: url(/assets/men2.jpg);
+    background-position-x: left !important;
+  }
+  .section2.section {
+    background: url(/assets/man1.jpg);
+    background-position-x: center !important;
   }
 }
 
 .section {
   height: 100vh !important;
   width: 100% !important;
-
   background-size: cover !important;
   background-position-x: center !important;
   justify-content: center !important;
@@ -50,6 +62,9 @@ $elYazisi: "Sacramento", cursive;
   margin-left: auto;
   li {
     font-family: "Raleway", sans-serif;
+    a {
+      color: black !important;
+    }
   }
 }
 .navbar-brand {
@@ -57,6 +72,7 @@ $elYazisi: "Sacramento", cursive;
   font-size: 24px;
 }
 .navSearch {
+  background-color: transparent !important;
   border: none;
   border-bottom: 1px solid #ced4da;
 
@@ -165,12 +181,22 @@ $elYazisi: "Sacramento", cursive;
     }
   }
 
-  .manSection {
+  .womanSection {
     .section1.section {
       background: url(/assets/woman1portrait.jpg);
     }
     .section2.section {
       background: url(/assets/woman2portrait.jpg);
+      background-position-x: inherit !important;
+    }
+  }
+
+  .manSection {
+    .section1.section {
+      background: url(/assets/men2port.jpg);
+    }
+    .section2.section {
+      background: url(/assets/man1port.jpg);
       background-position-x: inherit !important;
     }
   }
@@ -250,3 +276,17 @@ $elYazisi: "Sacramento", cursive;
     transition: translateX(0%);
   }
 }
+
+//arrows
+.tabs a {
+  color: white;
+  text-decoration: none;
+}
+.arrows a {
+  color: black;
+  text-decoration: none;
+}
+
+//arrows
+
+//content //
