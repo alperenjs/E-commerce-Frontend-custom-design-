@@ -79,7 +79,7 @@
 //product slider
 .sliderWrapper {
   padding-top: 40px;
-
+  padding-bottom: 30px;
   width: 75vw;
   margin: auto;
   .sliderContents {
@@ -104,6 +104,11 @@
   text-align: center;
 }
 //product slider
+
+.sliderHeader {
+  text-align: center;
+  font-family: $mainLinkText;
+}
 
 @media only screen and (max-width: 600px) {
   .section2 p {
