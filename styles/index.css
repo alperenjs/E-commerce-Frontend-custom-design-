@@ -318,7 +318,7 @@ span {
 }
 
 .shopCartIcon {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   padding: 20px 30px 0px 20px;
@@ -382,7 +382,7 @@ span {
   background-image: url(/assets/lingerie.jpg);
 }
 
-.Mydropdown:hover .dropdown-content {
+.Mydropdown:hover .collapse {
   display: block;
 }
 
@@ -524,5 +524,81 @@ span {
 .arrows a {
   color: black;
   text-decoration: none;
+}
+
+.navUL {
+  position: absolute;
+}
+
+.navUL li {
+  list-style: none;
+  text-decoration: none;
+  padding-left: 15px;
+  padding-bottom: 4px;
+}
+
+.navUL .navUlsubHeader {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.navUL img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (min-device-width: 991px) and (max-device-width: 1960px) {
+  .nav-item:hover .navUL {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navUL.collapse.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav-item .navUL {
+    background: #f1f1f1;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 300px;
+  }
+  .nav-item .navUL li {
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #f8f9fa;
+  }
+  .navbar-collapse .form-inline {
+    margin-left: 25px;
+  }
+  .navUL {
+    position: relative;
+    background-color: #e9ecef;
+  }
+  .navUL img {
+    display: none;
+  }
+  .navbar-collapse .navbarUl {
+    text-align: left !important;
+    margin-left: 20px;
+  }
+  .navbar-collapse .navbarUl li {
+    padding-left: 20px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
