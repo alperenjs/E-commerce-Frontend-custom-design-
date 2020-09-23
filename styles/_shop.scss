@@ -1,0 +1,36 @@
+.main {
+  padding: 40px 0 40px 0;
+  text-align: center;
+  justify-content: center;
+  .productsHeader {
+    h4 {
+      padding: 40px 0 40px 0;
+      font-family: $mainLinkText;
+      font-weight: 600;
+    }
+  }
+  .productVitrin {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 1rem;
+    cursor: pointer;
+    .card {
+      position: unset !important;
+      border: none !important;
+      padding-bottom: 15p !important;
+      margin: auto;
+      .card-body {
+        .card-text {
+          font-family: $product;
+          font-size: 24px;
+          letter-spacing: 1px;
+          font-weight: bolder;
+        }
+        .card-text.price {
+          color: rgb(102, 102, 102);
+        }
+      }
+    }
+  }
+}

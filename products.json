@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1237,
+    "title": "Kısakol Elbise",
+    "img": "/assets/product7.jpg",
+    "img1": "/assets/product71.jpg",
+    "detail": "%100 Cotton.",
+    "price": 99.9
+  },
+
+  {
+    "id": 1233,
+    "title": "TURUNCU EŞOFMAN ALTI",
+    "img": "/assets/product4.jpg",
+    "img1": "/assets/product41.jpg",
+    "img2": "/assets/product42.jpg",
+    "detail": "Kumaş Bilgisi: % 90 Pamuk % 10 Elastan.  15 gün içerisinde koşulsuz iade.",
+    "price": 149.9
+  },
+
+  {
+    "id": 1236,
+    "title": "Bel Lastikli Fitilli Pantolon",
+    "img": "/assets/product6.jpg",
+    "img1": "/assets/product61.jpg",
+    "detail": "%95 Polyester %5 Elestan.",
+    "price": 49.9
+  },
+  {
+    "id": 1231,
+    "title": "büzgülü mini off white",
+    "img": "/assets/product2.jpg",
+    "img1": "/assets/product21.jpg",
+    "img2": "/assets/product22.jpg",
+    "detail": "Kumaş Bilgisi: % 90 Pamuk % 10 Elastan.  15 gün içerisinde koşulsuz iade.",
+    "price": 177.9
+  },
+  {
+    "id": 1232,
+    "title": "YEŞİL BOYUNDAN BAĞLAMALI  BÜSTİYER",
+    "img": "/assets/product3.jpg",
+    "img1": "/assets/product31.jpg",
+    "img2": "/assets/product32.jpg",
+    "detail": "Kumaş Bilgisi: % 90 Pamuk % 10 Elastan.  15 gün içerisinde koşulsuz iade.",
+    "price": 29.9
+  },
+
+  {
+    "id": 1234,
+    "title": "OFF WHİTE ATLET",
+    "img": "/assets/product1.jpg",
+    "img1": "/assets/product11.jpg",
+    "img2": "/assets/product12.jpg",
+    "detail": "Kumaş Bilgisi: % 90 Pamuk % 10 Elastan.  15 gün içerisinde koşulsuz iade.",
+    "price": 45.9
+  },
+  {
+    "id": 1235,
+    "title": "Kruvaze Yaka Desenli Elbise",
+    "img": "/assets/product5.jpg",
+    "img1": "/assets/product51.jpg",
+    "detail": "%70 Cotton %30 Polyester. Normal Kalıp.",
+    "price": 149.9
+  },
+  {
+    "id": 1236,
+    "title": "Sırt File Detaylı Pedli Büstiyer",
+    "img": "/assets/product8.jpg",
+    "img1": "/assets/product81.jpg",
+    "detail": "%50 Viskon %50 Polyester. Normal kalıp.",
+    "price": 12.9
+  },
+  {
+    "id": 1237,
+    "title": "Kalın Askılı büstiyer",
+    "img": "/assets/product9.jpg",
+    "img1": "/assets/product91.jpg",
+    "detail": "%70 Cotton %30 Polyester. Normal Kalıp.",
+    "price": 149.9
+  },
+  {
+    "id": 1238,
+    "title": "Kadın Günlük Çizme",
+    "img": "/assets/product100.jpeg",
+    "img1": "/assets/product101.jpeg",
+    "img2": "/assets/product102.jpeg",
+    "detail": "%100 Deri.",
+    "price": 179.99
+  },
+  {
+    "id": 1239,
+    "title": "Kadın Topuklu Bot",
+    "img": "/assets/product201.jpeg",
+    "img1": "/assets/product202.jpg",
+    "detail": "%100 Deri.",
+    "price": 149.9
+  },
+  {
+    "id": 12310,
+    "title": "BEJ DESİRE PUSH UP BRALET",
+    "img": "/assets/product300.jpg",
+    "img1": "/assets/product301.jpg",
+    "detail": "POLYAMIDE %88,ELASTANE %12.",
+    "price": 179.99
+  },
+  {
+    "id": 12311,
+    "title": "ÇOK RENKLİ ASHLEY MAYO",
+    "img": "/assets/product400.jpg",
+    "img2": "/assets/product402.jpg",
+    "img1": "/assets/product401.jpg",
+    "detail": "%100 Deri.",
+    "price": 149.9
+  },
+  {
+    "id": 12312,
+    "title": "TEN SMOOTH LACE STRİNG KÜLOT",
+    "img": "/assets/product500.jpg",
+    "img1": "/assets/product501.jpg",
+    "detail": "Smooth Lace String Külot.",
+    "price": 24.9
+  },
+  {
+    "id": 12313,
+    "title": "COSY NUDE SÜTYEN",
+    "img": "/assets/product600.jpg",
+    "img2": "/assets/product602.jpg",
+    "img1": "/assets/product601.jpg",
+    "detail": "POLYAMIDE %84,ELASTANE %16.",
+    "price": 149.9
+  },
+  {
+    "id": 12315,
+    "title": "ÇOK RENKLİ DAİLY TOKA SET",
+    "img": "/assets/product700.jpg",
+    "detail": "ÇOK RENKLİ DAİLY TOKA SET",
+    "price": 24.9
+  },
+  {
+    "id": 12316,
+    "title": "ÇOK RENKLİ MOON BANDANA",
+    "img": "/assets/product800.jpg",
+    "detail": "ÇOK RENKLİ MOON BANDANA.",
+    "price": 24.9
+  }
+]

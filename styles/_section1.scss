@@ -50,32 +50,6 @@
   border: 2px solid black;
 }
 
-.main {
-  padding: 40px 0 40px 0;
-  text-align: center;
-  justify-content: center;
-  .productsHeader {
-    h4 {
-      padding: 40px 0 40px 0;
-      font-family: $mainLinkText;
-      font-weight: 600;
-    }
-  }
-  .productVitrin {
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-    grid-gap: 1rem;
-    cursor: pointer;
-    .card {
-      position: unset !important;
-      border: none !important;
-      padding-bottom: 15p !important;
-      margin: auto;
-    }
-  }
-}
-
 //product slider
 .sliderWrapper {
   padding-top: 40px;
