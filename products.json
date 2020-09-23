@@ -1,6 +1,7 @@
 [
   {
     "id": "1237",
+    "kind": "shoe",
     "title": "Kısakol Elbise",
     "img": "/assets/product7.jpg",
     "img1": "/assets/product71.jpg",
@@ -10,6 +11,7 @@
 
   {
     "id": "1233",
+    "kind": "shoe",
     "title": "TURUNCU EŞOFMAN ALTI",
     "img": "/assets/product4.jpg",
     "img1": "/assets/product41.jpg",
@@ -20,6 +22,7 @@
 
   {
     "id": "1236",
+    "kind": "shoe",
     "title": "Bel Lastikli Fitilli Pantolon",
     "img": "/assets/product6.jpg",
     "img1": "/assets/product61.jpg",
@@ -63,7 +66,7 @@
     "price": 149.9
   },
   {
-    "id": "1236",
+    "id": "1236666",
     "title": "Sırt File Detaylı Pedli Büstiyer",
     "img": "/assets/product8.jpg",
     "img1": "/assets/product81.jpg",

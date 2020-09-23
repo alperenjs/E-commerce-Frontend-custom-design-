@@ -8,21 +8,33 @@ function GetParameterByName(name, url) {
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-// document.getElementById("productDetail").innerHTML = GetParameterByName("pass");
 var pass = GetParameterByName("pass");
 console.log(pass);
 
 function load_content(pass) {
-  // global = this.id;
-  // console.log("globale taşınan değer" + global);
-  //değeri global değişkene taşıyıp sonra ordaki id ile veri çağırmak ?
   fetch("products.json")
     .then((res) => res.json())
     .then((data) => {
-      //Id'ye göre veri çekme 1111111111111111
-      // var item = findId(data, 1);
-      console.log(data);
-      //Id'ye göre veri çekme 222222222222222222222
+      //   console.log(data);
+      //Id'ye göre veri çekme
+
+      //aşağı satır filter 'shoe' kind içerenleri çekiyor
+      //   let newData = [];
+      //   let filterValue = "shoe";
+
+      //   for (let value in data) {
+      //     if (data[value].kind === filterValue) {
+      //.price >= fiyat diyip fiyat da kategoriliyebiliyoruz
+      //       newData.push(data[value]);
+      //     }
+      //   }
+      //   console.log(newData);
+      //aynı kind ürünleir yukarda çekip bu foreach ile sayafaya yazdırcaz
+      //   newData.forEach((urun) => {
+      //     console.log(urun);
+      //   });
+      //
+
       var item = data.find((item) => item.id === pass);
       console.log(item);
       console.log("Loading content for {" + pass + "}");
@@ -32,10 +44,12 @@ function load_content(pass) {
                                     <p> sonunda çalıştı </p>
                                     <h4> ID: ${pass} ${item.title}   </h4>
                                     <h5> fiyat: ${item.price}
+                                    <p> ${item.detail} </p>
                                     <img src="${item.img}">
                                 </div>
                                 `;
       document.querySelector("#productDetail").innerHTML = output;
     });
 }
+
 load_content(pass);
