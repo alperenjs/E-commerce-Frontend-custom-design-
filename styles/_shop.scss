@@ -14,8 +14,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-gap: 1rem;
-    cursor: pointer;
     .card {
+      cursor: pointer;
       position: unset !important;
       border: none !important;
       padding-bottom: 15p !important;

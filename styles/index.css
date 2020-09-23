@@ -266,10 +266,10 @@ footer .container .row {
   -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 1rem;
-  cursor: pointer;
 }
 
 .main .productVitrin .card {
+  cursor: pointer;
   position: unset !important;
   border: none !important;
   padding-bottom: 15p !important;

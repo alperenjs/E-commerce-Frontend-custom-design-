@@ -1,6 +1,6 @@
 [
   {
-    "id": 1237,
+    "id": "1237",
     "title": "Kısakol Elbise",
     "img": "/assets/product7.jpg",
     "img1": "/assets/product71.jpg",
@@ -9,7 +9,7 @@
   },
 
   {
-    "id": 1233,
+    "id": "1233",
     "title": "TURUNCU EŞOFMAN ALTI",
     "img": "/assets/product4.jpg",
     "img1": "/assets/product41.jpg",
@@ -19,7 +19,7 @@
   },
 
   {
-    "id": 1236,
+    "id": "1236",
     "title": "Bel Lastikli Fitilli Pantolon",
     "img": "/assets/product6.jpg",
     "img1": "/assets/product61.jpg",
@@ -27,7 +27,7 @@
     "price": 49.9
   },
   {
-    "id": 1231,
+    "id": "1231",
     "title": "büzgülü mini off white",
     "img": "/assets/product2.jpg",
     "img1": "/assets/product21.jpg",
@@ -36,7 +36,7 @@
     "price": 177.9
   },
   {
-    "id": 1232,
+    "id": "1232",
     "title": "YEŞİL BOYUNDAN BAĞLAMALI  BÜSTİYER",
     "img": "/assets/product3.jpg",
     "img1": "/assets/product31.jpg",
@@ -46,7 +46,7 @@
   },
 
   {
-    "id": 1234,
+    "id": "1234",
     "title": "OFF WHİTE ATLET",
     "img": "/assets/product1.jpg",
     "img1": "/assets/product11.jpg",
@@ -55,7 +55,7 @@
     "price": 45.9
   },
   {
-    "id": 1235,
+    "id": "1235",
     "title": "Kruvaze Yaka Desenli Elbise",
     "img": "/assets/product5.jpg",
     "img1": "/assets/product51.jpg",
@@ -63,7 +63,7 @@
     "price": 149.9
   },
   {
-    "id": 1236,
+    "id": "1236",
     "title": "Sırt File Detaylı Pedli Büstiyer",
     "img": "/assets/product8.jpg",
     "img1": "/assets/product81.jpg",
@@ -71,7 +71,7 @@
     "price": 12.9
   },
   {
-    "id": 1237,
+    "id": "12377",
     "title": "Kalın Askılı büstiyer",
     "img": "/assets/product9.jpg",
     "img1": "/assets/product91.jpg",
@@ -79,7 +79,7 @@
     "price": 149.9
   },
   {
-    "id": 1238,
+    "id": "1238",
     "title": "Kadın Günlük Çizme",
     "img": "/assets/product100.jpeg",
     "img1": "/assets/product101.jpeg",
@@ -88,7 +88,7 @@
     "price": 179.99
   },
   {
-    "id": 1239,
+    "id": "1239",
     "title": "Kadın Topuklu Bot",
     "img": "/assets/product201.jpeg",
     "img1": "/assets/product202.jpg",
@@ -96,7 +96,7 @@
     "price": 149.9
   },
   {
-    "id": 12310,
+    "id": "12310",
     "title": "BEJ DESİRE PUSH UP BRALET",
     "img": "/assets/product300.jpg",
     "img1": "/assets/product301.jpg",
@@ -104,7 +104,7 @@
     "price": 179.99
   },
   {
-    "id": 12311,
+    "id": "12311",
     "title": "ÇOK RENKLİ ASHLEY MAYO",
     "img": "/assets/product400.jpg",
     "img2": "/assets/product402.jpg",
@@ -113,7 +113,7 @@
     "price": 149.9
   },
   {
-    "id": 12312,
+    "id": "12312",
     "title": "TEN SMOOTH LACE STRİNG KÜLOT",
     "img": "/assets/product500.jpg",
     "img1": "/assets/product501.jpg",
@@ -121,7 +121,7 @@
     "price": 24.9
   },
   {
-    "id": 12313,
+    "id": "12313",
     "title": "COSY NUDE SÜTYEN",
     "img": "/assets/product600.jpg",
     "img2": "/assets/product602.jpg",
@@ -130,14 +130,14 @@
     "price": 149.9
   },
   {
-    "id": 12315,
+    "id": "12315",
     "title": "ÇOK RENKLİ DAİLY TOKA SET",
     "img": "/assets/product700.jpg",
     "detail": "ÇOK RENKLİ DAİLY TOKA SET",
     "price": 24.9
   },
   {
-    "id": 12316,
+    "id": "12316",
     "title": "ÇOK RENKLİ MOON BANDANA",
     "img": "/assets/product800.jpg",
     "detail": "ÇOK RENKLİ MOON BANDANA.",
