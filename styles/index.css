@@ -243,8 +243,12 @@ footer .container .row {
   font-size: 11px;
 }
 
+.section3 {
+  margin-left: 200px;
+}
+
 .main {
-  padding: 40px 0 40px 0;
+  padding: 20px 0 40px 0;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -285,6 +289,80 @@ footer .container .row {
 
 .main .productVitrin .card .card-body .card-text.price {
   color: #666666;
+}
+
+.filterBar {
+  overflow: auto;
+  position: fixed;
+  height: 100vh;
+  width: 200px;
+  background-color: white;
+  padding-top: 100px;
+}
+
+.filterBar ul {
+  text-align: center;
+}
+
+.filterBar ul a {
+  text-align: center;
+  color: black;
+}
+
+.filterBar ul a span {
+  font-family: "Raleway", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.7px;
+}
+
+.filterBar ul .filterHeader {
+  font-size: 14px;
+  padding-bottom: 10px;
+  font-weight: 800;
+}
+
+.filterBar ul li {
+  font-size: 13px;
+  letter-spacing: 0.7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  font-family: "Raleway", sans-serif;
+  padding-left: 15px;
+}
+
+.filterBar ul li i {
+  padding-right: 4px;
+}
+
+.breadcrumb {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%) !important;
+}
+
+.breadcrumb select option {
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+  color: #505050;
+  font-weight: bold;
+}
+
+.breadcrumb span {
+  padding-right: 5px;
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-family: "Raleway", sans-serif;
 }
 
 * {

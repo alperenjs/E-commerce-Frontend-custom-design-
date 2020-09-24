@@ -21,8 +21,60 @@
 </head>
 
 <body>
+
     <div id="barba-wrapper">
         <div class="womanSection barba-container">
+            <div class="filterBar">
+                <ul>
+                    <li class="filterHeader"><strong>KATEGORİ</strong> </li>
+                    <li><i class="far fa-square"></i> Aksesuar</li>
+                    <li><i class="far fa-square"></i> Alt Giyim</li>
+                    <li><i class="far fa-square"></i> Dış Giyim </li>
+                    <li><i class="far fa-square"></i> Elbise</li>
+                    <ul id="ktgr" class="collapse">
+                        <li><i class="far fa-square"></i> İç Giyim</li>
+                        <li><i class="far fa-square"></i> Üst Giyim</li>
+                        <li><i class="far fa-square"></i> Klasik Giyim </li>
+                    </ul>
+                    <a aria-expanded="false" aria-controls="ktgr" data-toggle="collapse" href="#ktgr"> <span>Daha Fazla
+                            Göster</span> </a>
+
+                </ul>
+                <hr>
+                <ul>
+                    <li class="filterHeader"><strong>BEDEN</strong> </li>
+                    <li><i class="far fa-square"></i> 3XS</li>
+                    <li><i class="far fa-square"></i> XXS</li>
+                    <li><i class="far fa-square"></i> XSS</li>
+                    <ul id="bdn" class="collapse">
+                        <li><i class="far fa-square"></i> XS</li>
+                        <li><i class="far fa-square"></i> S</li>
+                        <li><i class="far fa-square"></i> S/M</li>
+                        <li><i class="far fa-square"></i> M</li>
+                        <li><i class="far fa-square"></i> L</li>
+                        <li><i class="far fa-square"></i> XL</li>
+                        <li><i class="far fa-square"></i> XXL</li>
+                        <li><i class="far fa-square"></i> 2XL</li>
+                        <li><i class="far fa-square"></i> 3XL</li>
+                    </ul>
+
+                    <a aria-expanded="false" aria-controls="bdn" data-toggle="collapse" href="#bdn"> <span>Daha Fazla
+                            Göster</span> </a>
+                </ul>
+                <hr>
+                <ul>
+                    <li class="filterHeader"><strong>FİYAT</strong> </li>
+                    <li><i class="far fa-square"></i> &#8378;0- &#8378;19.99 </li>
+                    <li><i class="far fa-square"></i> &#8378;20- &#8378;39.99 </li>
+                    <li><i class="far fa-square"></i> &#8378;30- &#8378;49.99 </li>
+                    <li><i class="far fa-square"></i> &#8378;50- &#8378;69.99 </li>
+                    <li><i class="far fa-square"></i> &#8378;99- &#8378;199.99 </li>
+                    <li><i class="far fa-square"></i> &#8378;200 ve üzeri </li>
+                </ul>
+
+
+            </div>
+
             <div class="navContainer">
                 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-myVar">
                     <a class="navbar-brand" href="#">KARAM</a>
@@ -162,17 +214,28 @@
                 </div>
             </div>
             <div class=" section3">
+
                 <!-- <div class="banner">
                         <a href="#">
                             <img style="height: auto;" src="/assets/bannerw2.jpg" class="img-fluid"
                                 alt="Responsive image">
                         </a>
                     </div> -->
+
                 <div class="main">
-                    <div class="productsHeader">
+                    <ol class="breadcrumb">
+                        <span> SIRALA:</span>
+                        <select class="custom-select custom-select-sm">
+                            <option disabled selected>Ürünleri sıralayın</option>
+                            <option value="1">Fiyata Göre (Artan)</option>
+                            <option value="2">Fiyata Göre (Azalan)</option>
+                        </select>
+                    </ol>
+
+                    <!-- <div class="productsHeader">
                         <h4></h4>
 
-                    </div>
+                    </div> -->
                     <div id="productVitrin" class="productVitrin">
                         <!--Shop.js ile jsondan veri geliyor-->
 

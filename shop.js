@@ -34,11 +34,9 @@ getUsers();
 function goTo(e) {
   pass = e.id;
   // ad = document.getElementById('kullaniciadi').value;
-  //   console.log(pass);
+  // console.log(pass);
   window.location.href = "productDetail.html?pass=" + pass;
 }
-
-//
 
 //tıklanan ürünün detay sayfasını açma
 

@@ -1,7 +1,12 @@
+.section3 {
+  margin-left: 200px;
+}
+
 .main {
-  padding: 40px 0 40px 0;
+  padding: 20px 0 40px 0;
   text-align: center;
   justify-content: center;
+
   .productsHeader {
     h4 {
       padding: 40px 0 40px 0;
@@ -34,3 +39,73 @@
     }
   }
 }
+
+//filter side menu
+
+.filterBar {
+  overflow: auto;
+  position: fixed;
+  height: 100vh;
+  width: 200px;
+  background-color: white;
+  padding-top: 100px;
+  ul {
+    text-align: center;
+    a {
+      text-align: center;
+      color: black;
+      span {
+        font-family: $mainLinkText;
+        font-size: 11px;
+        letter-spacing: 0.7px;
+      }
+    }
+    .filterHeader {
+      font-size: 14px;
+      padding-bottom: 10px;
+      font-weight: 800;
+    }
+    li {
+      font-size: 13px;
+      letter-spacing: 0.7px;
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      font-family: $mainLinkText;
+      padding-left: 15px;
+      i {
+        padding-right: 4px;
+      }
+    }
+  }
+}
+//filter side menu
+
+//breadcrumb filter
+
+.breadcrumb {
+  display: flex !important;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-image: linear-gradient(
+    120deg,
+    #fdfbfb 0%,
+    #ebedee 100%
+  ) !important;
+  select {
+    option {
+      font-family: $mainLinkText;
+      font-size: 17px;
+      color: rgb(80, 80, 80);
+      font-weight: bold;
+    }
+  }
+  span {
+    padding-right: 5px;
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-family: $mainLinkText;
+  }
+}
+
+//breadcrumb filter
