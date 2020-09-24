@@ -365,6 +365,165 @@ footer .container .row {
   font-family: "Raleway", sans-serif;
 }
 
+.container {
+  padding-top: 90px;
+  padding-bottom: 10px;
+}
+
+.pImgGallery {
+  margin: 0 auto;
+}
+
+.header {
+  margin: 0 auto;
+}
+
+.wrapper {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: left;
+}
+
+.thumbnail-inner {
+  float: left;
+}
+
+.thumbnail-inner img {
+  width: 120px;
+  height: 120px;
+  margin: 8px 0px 0px 12px;
+  border-radius: 6px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.thumbnail-inner img:hover {
+  opacity: 1;
+}
+
+.details-right {
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  float: left;
+}
+
+.details-right p {
+  margin: 0;
+}
+
+.details-right .header {
+  display: block;
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+}
+
+.details-right .header span {
+  color: black;
+}
+
+.details-right .header p {
+  font-size: 11px;
+  color: #464646;
+}
+
+.details-right .price {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  padding-left: 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.details-right .price span {
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+.details-right .price p {
+  font-size: 13px;
+  line-height: 12px;
+  font-weight: 800;
+  color: black;
+  border: 1px solid black;
+  padding: 3px;
+}
+
+.details-right .sizes {
+  padding-top: 20px;
+  padding-left: 18px;
+  display: block;
+}
+
+.details-right .sizes p {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.details-right .sizes .sizeWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.details-right .sizes .sizeWrapper p {
+  margin-right: 4px;
+  border: 1px solid black;
+  padding: 4px;
+  font-size: 9px;
+  letter-spacing: 1px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.details-right .btn {
+  padding-top: 20px;
+}
+
+.details-right .btn button {
+  background-color: black;
+  color: white;
+  padding: 4px 40px 4px 40px;
+  width: 300px;
+}
+
+.details-right .detail {
+  padding-top: 20px;
+  display: block;
+  padding-left: 18px;
+}
+
+.details-right .detail span {
+  font-size: 14px;
+}
+
+.details-right .detail p {
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .col-sm {
+    -webkit-box-flex: unset !important;
+        -ms-flex-positive: unset !important;
+            flex-grow: unset !important;
+  }
+  .details-right {
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
