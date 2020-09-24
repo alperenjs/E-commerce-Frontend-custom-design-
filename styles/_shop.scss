@@ -1,5 +1,6 @@
-.section3 {
+.shopSection {
   margin-left: 200px;
+  transition: margin-left 0.5s;
 }
 
 .main {
@@ -41,14 +42,33 @@
 }
 
 //filter side menu
-
+.openFilters {
+  position: fixed;
+  font-family: $mainLinkText;
+  z-index: 10;
+  top: 50%;
+  font-size: 17px;
+  left: 0;
+  color: rgb(116, 116, 116);
+  cursor: pointer;
+}
 .filterBar {
+  z-index: 11;
+  transition: 0.5s;
   overflow: auto;
   position: fixed;
-  height: 100vh;
+  // height: 100vh!important;
+  height: -webkit-fill-available !important;
   width: 200px;
   background-color: white;
   padding-top: 100px;
+  .closebtn {
+    float: right;
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
   ul {
     text-align: center;
     a {

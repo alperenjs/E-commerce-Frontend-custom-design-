@@ -5,6 +5,7 @@
     "title": "Kısakol Elbise",
     "img": "/assets/product7.jpg",
     "img1": "/assets/product71.jpg",
+    "img2": "/assets/productNone.jpg",
     "detail": "%100 Cotton.",
     "price": 99.9
   },
@@ -26,6 +27,7 @@
     "title": "Bel Lastikli Fitilli Pantolon",
     "img": "/assets/product6.jpg",
     "img1": "/assets/product61.jpg",
+    "img2": "/assets/productNone.jpg",
     "detail": "%95 Polyester %5 Elestan.",
     "price": 49.9
   },
@@ -62,6 +64,7 @@
     "title": "Kruvaze Yaka Desenli Elbise",
     "img": "/assets/product5.jpg",
     "img1": "/assets/product51.jpg",
+    "img2": "/assets/productNone.jpg",
     "detail": "%70 Cotton %30 Polyester. Normal Kalıp.",
     "price": 149.9
   },
@@ -70,6 +73,7 @@
     "title": "Sırt File Detaylı Pedli Büstiyer",
     "img": "/assets/product8.jpg",
     "img1": "/assets/product81.jpg",
+    "img2": "/assets/productNone.jpg",
     "detail": "%50 Viskon %50 Polyester. Normal kalıp.",
     "price": 12.9
   },
@@ -78,6 +82,7 @@
     "title": "Kalın Askılı büstiyer",
     "img": "/assets/product9.jpg",
     "img1": "/assets/product91.jpg",
+    "img2": "/assets/productNone.jpg",
     "detail": "%70 Cotton %30 Polyester. Normal Kalıp.",
     "price": 149.9
   },
@@ -95,6 +100,7 @@
     "title": "Kadın Topuklu Bot",
     "img": "/assets/product201.jpeg",
     "img1": "/assets/product202.jpg",
+    "img2": "/assets/productNone.jpg",
     "detail": "%100 Deri.",
     "price": 149.9
   },
@@ -103,6 +109,7 @@
     "title": "BEJ DESİRE PUSH UP BRALET",
     "img": "/assets/product300.jpg",
     "img1": "/assets/product301.jpg",
+    "img2": "/assets/productNone.jpg",
     "detail": "POLYAMIDE %88,ELASTANE %12.",
     "price": 179.99
   },
@@ -120,6 +127,7 @@
     "title": "TEN SMOOTH LACE STRİNG KÜLOT",
     "img": "/assets/product500.jpg",
     "img1": "/assets/product501.jpg",
+    "img2": "/assets/productNone.jpg",
     "detail": "Smooth Lace String Külot.",
     "price": 24.9
   },
@@ -136,6 +144,8 @@
     "id": "12315",
     "title": "ÇOK RENKLİ DAİLY TOKA SET",
     "img": "/assets/product700.jpg",
+    "img1": "/assets/product801.jpg",
+    "img2": "/assets/productNone.jpg",
     "detail": "ÇOK RENKLİ DAİLY TOKA SET",
     "price": 24.9
   },
@@ -143,6 +153,8 @@
     "id": "12316",
     "title": "ÇOK RENKLİ MOON BANDANA",
     "img": "/assets/product800.jpg",
+    "img1": "/assets/product801.jpg",
+    "img2": "/assets/productNone.jpg",
     "detail": "ÇOK RENKLİ MOON BANDANA.",
     "price": 24.9
   }

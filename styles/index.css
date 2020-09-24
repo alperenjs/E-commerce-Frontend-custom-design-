@@ -114,11 +114,13 @@ span {
   color: black;
 }
 
-.text button {
+.text a {
   font-family: "Archivo Black", sans-serif;
   padding: 5px 20px 5px 20px;
   background: transparent;
   border: 2px solid black;
+  color: black;
+  text-decoration: none;
 }
 
 .sliderWrapper {
@@ -243,8 +245,10 @@ footer .container .row {
   font-size: 11px;
 }
 
-.section3 {
+.shopSection {
   margin-left: 200px;
+  -webkit-transition: margin-left 0.5s;
+  transition: margin-left 0.5s;
 }
 
 .main {
@@ -291,13 +295,35 @@ footer .container .row {
   color: #666666;
 }
 
+.openFilters {
+  position: fixed;
+  font-family: "Raleway", sans-serif;
+  z-index: 10;
+  top: 50%;
+  font-size: 17px;
+  left: 0;
+  color: #747474;
+  cursor: pointer;
+}
+
 .filterBar {
+  z-index: 11;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   overflow: auto;
   position: fixed;
-  height: 100vh;
+  height: -webkit-fill-available !important;
   width: 200px;
   background-color: white;
   padding-top: 100px;
+}
+
+.filterBar .closebtn {
+  float: right;
+  padding-right: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
 }
 
 .filterBar ul {

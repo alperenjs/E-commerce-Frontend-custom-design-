@@ -40,13 +40,48 @@ function load_content(pass) {
       console.log("Loading content for {" + pass + "}");
 
       var output = `
-                                <div style="padding-top:100px;" class="alperen" > 
-                                    <p> sonunda çalıştı </p>
-                                    <h4> ID: ${pass} ${item.title}   </h4>
-                                    <h5> fiyat: ${item.price}
-                                    <p> ${item.detail} </p>
-                                    <img src="${item.img}">
-                                </div>
+                <div class="row">
+                <div class="col-sm details-left  pImgGallery">
+                    <div class="wrapper">
+                        <div id="big_img">
+                            <img src="${item.img}" width="330" height="440" id="myPicture"
+                                class="border" />
+                        </div>
+                        <div class="thumbnail-inner">
+                            <img class="changeImg" src="${item.img}" id="small-1" />
+                            <img class="changeImg" src="${item.img1}" id="small-2" />
+                            <img class="changeImg" src="${item.img2}" id="small-3" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm details-right">
+                    <div class="header row">
+                        <span>${item.title}</span>
+                        <p>${pass}</p>
+                    </div>
+                    <div class="price row">
+                        <span>&#8378;${item.price}</span>
+                        <p>KARGO BEDAVA</p>
+                    </div>
+                    <div class="sizes row">
+                        <p>Beden</p>
+                        <div class="sizeWrapper">
+                            <p>34</p>
+                            <p>36</p>
+                            <p>39</p>
+
+                        </div>
+                    </div>
+                    <div class="btn row">
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="detail row">
+                        <span>Ürün Detayı</span>
+                        <p> ${item.detail}</p>
+
+                    </div>
+                </div>
+            </div>
                                 `;
       document.querySelector("#productDetail").innerHTML = output;
     });
@@ -54,12 +89,17 @@ function load_content(pass) {
 
 load_content(pass);
 
-///IMG GALLERY
-window.onload = gallery;
+//   ÖNEMLİ NOT  // gallery fonksiyonunun load_content fonksiyonu bittikten sonra çalışması lazım
+setTimeout(() => {
+  gallery();
+}, 2000);
+// window.onload = gallery;
 //when we load your gallery in browser then gallery function is loaded
 function gallery() {
   // gallery is the name of function
+
   var allimages = document.images;
+  console.log(allimages);
   //now we create a variable allimages
   //and we store all images in this allimages variable
   for (var i = 0; i < allimages.length; i++) {

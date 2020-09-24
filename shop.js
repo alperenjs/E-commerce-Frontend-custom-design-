@@ -49,3 +49,14 @@ function goTo(e) {
 //   console.log(ad);
 //   window.location.href = "data2.html?ad=" + ad;
 // }
+
+//open and close filters
+function openNav() {
+  document.getElementById("filterBar").style.width = "200px";
+  document.getElementById("shopSection").style.marginLeft = "200px";
+}
+
+function closeNav() {
+  document.getElementById("filterBar").style.width = "0";
+  document.getElementById("shopSection").style.marginLeft = "0";
+}
