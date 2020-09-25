@@ -550,6 +550,79 @@ footer .container .row {
   }
 }
 
+.onerilenSection {
+  padding-top: 20px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.onerilenSection span {
+  font-weight: 400;
+}
+
+.onerilenSection span strong {
+  color: black;
+  font-weight: 600;
+}
+
+.onerilenSection .onerilenWrapper {
+  cursor: -webkit-grab;
+  cursor: grab;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.onerilenSection .onerilenWrapper .product {
+  text-align: left;
+  padding-top: 20px;
+  margin-left: 10px;
+  font-family: "Amatic SC", cursive;
+}
+
+.onerilenSection .onerilenWrapper .product img {
+  margin-right: 10px;
+  width: 200px;
+  height: 300px;
+  letter-spacing: 0.7px;
+}
+
+.onerilenSection .onerilenWrapper .product h6 {
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.onerilenSection .onerilenWrapper .product span {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.onerilenWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.onerilenWrapper {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+@media only screen and (max-width: 768px) {
+  .onerilenSection {
+    padding-left: unset;
+    padding-right: unset;
+  }
+}
+
+.holding {
+  cursor: -webkit-grabbing !important;
+  cursor: grabbing !important;
+}
+
 * {
   margin: 0;
   padding: 0;

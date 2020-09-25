@@ -264,3 +264,66 @@
 }
 
 //PRODUCT DETAIL PAGE
+
+//product detail öneriler carousel
+.onerilenSection {
+  padding-top: 20px;
+  text-align: center;
+  font-family: $mainLinkText;
+  padding-left: 80px;
+  padding-right: 80px;
+  span {
+    font-weight: 400;
+
+    strong {
+      color: black;
+      font-weight: 600;
+    }
+  }
+  .onerilenWrapper {
+    cursor: grab;
+    display: flex;
+    overflow-x: scroll;
+
+    .product {
+      text-align: left;
+      padding-top: 20px;
+      margin-left: 10px;
+      font-family: $product;
+      img {
+        margin-right: 10px;
+        width: 200px;
+        height: 300px;
+        letter-spacing: 0.7px;
+      }
+      h6 {
+        font-size: 18px;
+        padding-top: 10px;
+      }
+      span {
+        font-weight: 600;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+.onerilenWrapper::-webkit-scrollbar {
+  display: none;
+}
+.onerilenWrapper {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@media only screen and (max-width: 768px) {
+  .onerilenSection {
+    padding-left: unset;
+    padding-right: unset;
+  }
+}
+
+//onerilen grabber
+.holding {
+  cursor: grabbing !important;
+}

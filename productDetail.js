@@ -44,7 +44,7 @@ function load_content(pass) {
                 <div class="col-sm details-left  pImgGallery">
                     <div class="wrapper">
                         <div id="big_img">
-                            <img src="${item.img}" width="330" height="440" id="myPicture"
+                            <img src="${item.img}" width="292 " height="440" id="myPicture"
                                 class="border" />
                         </div>
                         <div class="thumbnail-inner">
@@ -115,4 +115,35 @@ function imgChanger() {
   var img = this;
   var mySrc = img.src;
   document.getElementById("myPicture").src = mySrc;
+}
+
+//önerilen kısmı hold to scroll
+{
+  const onerilen = document.querySelector(".onerilenWrapper");
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  onerilen.addEventListener("mousedown", (e) => {
+    isDown = true;
+    onerilen.classList.add("holding");
+    startX = e.pageX - onerilen.offsetLeft;
+    scrollLeft = onerilen.scrollLeft;
+  });
+  onerilen.addEventListener("mouseleave", () => {
+    isDown = false;
+    onerilen.classList.remove("holding");
+  });
+  onerilen.addEventListener("mouseup", () => {
+    isDown = false;
+    onerilen.classList.remove("holding");
+  });
+  onerilen.addEventListener("mousemove", (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - onerilen.offsetLeft;
+    const walk = (x - startX) * 3; //scroll-fast
+    onerilen.scrollLeft = scrollLeft - walk;
+    console.log(walk);
+  });
 }

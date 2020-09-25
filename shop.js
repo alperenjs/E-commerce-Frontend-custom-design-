@@ -20,7 +20,7 @@ function getUsers() {
              }" alt="Card image cap">
              <div class="card-body">
                  <p class="card-text">${product.title.toUpperCase()}</p>
-                 <p class="card-text price"> ${product.price}&#8378; </p>
+                 <p class="card-text price">&#8378; ${product.price} </p>
              </div>
          </div>`;
 
