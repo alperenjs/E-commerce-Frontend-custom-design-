@@ -86,6 +86,7 @@
       font-weight: 800;
     }
     li {
+      cursor: pointer;
       font-size: 13px;
       letter-spacing: 0.7px;
       display: flex;
@@ -147,12 +148,6 @@
   justify-content: center;
   align-items: center;
   float: left;
-  .thumbnail-inner {
-    // display: flex;
-    // overflow-x: auto;
-    // max-width: 350px;
-    // border: 1px solid red;
-  }
 }
 
 .thumbnail-inner {
@@ -326,4 +321,10 @@
 //onerilen grabber
 .holding {
   cursor: grabbing !important;
+}
+
+//sidebar filtered products adding class
+
+.showingProduct {
+  border: 2px solid red;
 }

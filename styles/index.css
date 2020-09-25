@@ -348,6 +348,7 @@ footer .container .row {
 }
 
 .filterBar ul li {
+  cursor: pointer;
   font-size: 13px;
   letter-spacing: 0.7px;
   display: -webkit-box;
@@ -621,6 +622,10 @@ footer .container .row {
 .holding {
   cursor: -webkit-grabbing !important;
   cursor: grabbing !important;
+}
+
+.showingProduct {
+  border: 2px solid red;
 }
 
 * {
