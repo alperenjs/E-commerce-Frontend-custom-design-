@@ -121,32 +121,62 @@ Barba.Pjax.getTransition = function () {
 //BARBA
 
 //slider-arrow-deneme
-const slider = document.querySelector(".sliderContents");
-let isDown = false;
-let startX;
-let scrollLeft;
+// const slider = document.querySelector(".sliderContents");
+// let isDown = false;
+// let startX;
+// let scrollLeft;
 
-slider.addEventListener("mousedown", (e) => {
-  isDown = true;
-  slider.classList.add("active");
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
-});
-slider.addEventListener("mouseleave", () => {
-  isDown = false;
-  slider.classList.remove("active");
-});
-slider.addEventListener("mouseup", () => {
-  isDown = false;
-  slider.classList.remove("active");
-});
-slider.addEventListener("mousemove", (e) => {
-  if (!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - slider.offsetLeft;
-  const walk = (x - startX) * 0.8; //scroll-fast
-  slider.scrollLeft = scrollLeft - walk;
-});
+// slider.addEventListener("mousedown", (e) => {
+//   isDown = true;
+//   slider.classList.add("active");
+//   startX = e.pageX - slider.offsetLeft;
+//   scrollLeft = slider.scrollLeft;
+// });
+// slider.addEventListener("mouseleave", () => {
+//   isDown = false;
+//   slider.classList.remove("active");
+// });
+// slider.addEventListener("mouseup", () => {
+//   isDown = false;
+//   slider.classList.remove("active");
+// });
+// slider.addEventListener("mousemove", (e) => {
+//   if (!isDown) return;
+//   e.preventDefault();
+//   const x = e.pageX - slider.offsetLeft;
+//   const walk = (x - startX) * 0.8; //scroll-fast
+//   slider.scrollLeft = scrollLeft - walk;
+// });
 //slider-arrow-deneme
+//önerilen kısmı hold to scroll
+{
+  const onerilen = document.querySelector(".onerilenWrapper");
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  onerilen.addEventListener("mousedown", (e) => {
+    isDown = true;
+    onerilen.classList.add("holding");
+    startX = e.pageX - onerilen.offsetLeft;
+    scrollLeft = onerilen.scrollLeft;
+  });
+  onerilen.addEventListener("mouseleave", () => {
+    isDown = false;
+    onerilen.classList.remove("holding");
+  });
+  onerilen.addEventListener("mouseup", () => {
+    isDown = false;
+    onerilen.classList.remove("holding");
+  });
+  onerilen.addEventListener("mousemove", (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - onerilen.offsetLeft;
+    const walk = (x - startX) * 3; //scroll-fast
+    onerilen.scrollLeft = scrollLeft - walk;
+    console.log(walk);
+  });
+}
 
 //sidebar deneme //

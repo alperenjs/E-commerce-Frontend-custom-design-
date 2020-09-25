@@ -29,6 +29,63 @@ function getUsers() {
     });
 }
 
+//azalan artan sıralama
+function sort() {
+  var x = document.getElementById("sortSelect").value;
+
+  dataShow.innerHTML = "";
+  fetch("products.json")
+    .then((res) => res.json())
+    .then((data) => {
+      if (x == 2) {
+        console.log("evet x 2");
+        data.sort(function (vote1, vote2) {
+          if (vote1.price > vote2.price) return -1;
+          if (vote1.price < vote2.price) return 1;
+        });
+      } else {
+        console.log("evet x 1");
+        data.sort(function (vote1, vote2) {
+          if (vote1.price < vote2.price) return -1;
+          if (vote1.price > vote2.price) return 1;
+        });
+      }
+      data.forEach((product) => {
+        var sortedOutput = `
+        <div onclick="goTo(this)" id="${
+          product.id
+        }" class="card" style="width: 15rem;">
+         <img class="card-img-top" src="${product.img}" alt="Card image cap">
+         <div class="card-body">
+             <p class="card-text">${product.title.toUpperCase()}</p>
+             <p class="card-text price">&#8378; ${product.price} </p>
+         </div>
+     </div>`;
+
+        console.log(product.price);
+        dataShow.innerHTML += sortedOutput;
+      });
+    });
+  // .then((sortedData) =>
+  //   sortedData.forEach((product) => {
+  //     var sortedOutput = `
+  //     <div onclick="goTo(this)" id="${
+  //       product.id
+  //     }" class="card" style="width: 15rem;">
+  //      <img class="card-img-top" src="${product.img}" alt="Card image cap">
+  //      <div class="card-body">
+  //          <p class="card-text">${product.title.toUpperCase()}</p>
+  //          <p class="card-text price">&#8378; ${product.price} </p>
+  //      </div>
+  //  </div>`;
+
+  //     console.log(product.price);
+  //     dataShow.innerHTML += sortedOutput;
+  //   })
+  // );
+}
+//azalan artan sıralama
+
 getUsers();
 
 function goTo(e) {
