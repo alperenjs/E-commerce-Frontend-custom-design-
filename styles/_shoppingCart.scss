@@ -1,0 +1,128 @@
+.shoppingCart-Wrapper {
+  padding-top: 50px;
+  .onerilenSection {
+    padding-top: 90px;
+    padding-left: 20px;
+  }
+}
+
+.shoppingCart-container {
+  font-family: $product;
+  letter-spacing: 1px;
+  font-size: 25px;
+  padding-bottom: 100px;
+  .sepetim {
+    letter-spacing: 2px;
+    font-weight: 800;
+    font-size: 29px;
+  }
+  .row.header {
+    .col {
+      justify-content: center;
+      text-align: left;
+    }
+    font-family: $mainLinkText;
+    background-color: rgba(211, 211, 211, 0.446);
+    font-size: 16px;
+    font-weight: 800;
+  }
+  .row.product {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .col {
+      justify-content: center;
+      text-align: left;
+    }
+  }
+  .totalCost {
+    .row {
+      align-items: flex-end;
+      height: fit-content;
+      width: 30vw;
+      margin-left: auto;
+      background-color: rgba(211, 211, 211, 0.446);
+      justify-content: space-between;
+      span {
+        padding: 5px;
+        font-family: sans-serif;
+        font-weight: lighter;
+      }
+    }
+  }
+  .btn {
+    float: right;
+    width: 100%;
+    button {
+      border: none;
+      outline: none;
+      background-color: black;
+      color: white;
+      padding: 10px 20px 10px 20px;
+      width: 100%;
+      font-size: 25px;
+    }
+  }
+}
+
+.shoppingCart-Wrapper {
+  display: flex;
+}
+
+.son {
+  width: 100%;
+  button {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100%;
+  }
+}
+.productName {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.discountBanner {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .sonGezdiklerim {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 515px) {
+  .product .col img {
+    height: 50px !important;
+  }
+  .product .col i {
+    font-size: 14px;
+  }
+  .products {
+    font-size: 14px !important;
+  }
+  .product .col {
+    padding: 0;
+  }
+  .totalCost .row span {
+    font-size: 13px;
+  }
+  .row.header .col {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 795px) {
+  .discountBanner {
+    display: inline-flex;
+    margin-top: 70px;
+    padding-bottom: 0;
+  }
+  .shoppingCart-container {
+    padding-top: 0;
+  }
+  .shoppingCart-Wrapper {
+    padding-top: 0;
+  }
+}

@@ -7,6 +7,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
@@ -23,7 +24,6 @@
 <body>
     <div id="barba-wrapper">
         <div class="womanSection barba-container">
-
 
             <div class="navContainer">
                 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-myVar">
@@ -45,8 +45,6 @@
                                         <li>Bras & Lingerie</li>
                                         <li>Sleep & Longue</li>
                                         <li>Bu sezon</li>
-
-
 
                                     </ul>
                                     <ul>
@@ -166,58 +164,155 @@
                     </a>
                 </div>
             </div>
-
-            <div id="productDetail" class="container">
-                <!--Product Detail is here-->
-
-
-
+            <div class="discountBanner banner">
+                <a href="#">
+                    <img style="height: auto;" src="/assets/longdiscount.jpg" class="img-fluid" alt="Responsive image">
+                </a>
             </div>
+            <div class="shoppingCart-Wrapper">
+                <div class="container shoppingCart-container">
+                    <div class="row sepetim">
+                        <div class="col"> Sepetim</div>
+                    </div>
+                    <div class="row header">
+                        <div class="col"></div>
+                        <div class="col">Ürün</div>
+                        <div class="col">Adet</div>
+                        <div class="col">Fiyat</div>
+                        <div class="col">Sil</div>
+                    </div>
+                    <div class="products">
 
-            <div class="onerilenSection">
 
-                <span>BEĞENEBİLECEĞİNİZ <strong>DİĞER ÜRÜNLER</strong></span>
+                        <h5 style="text-align: center;
+                            padding-top: 60px;
+                        ">Henüz ürün eklemediniz</h5>
 
-                <div class="onerilenWrapper">
-                    <div id="1235" class="product">
-                        <img src="/assets/product5.jpg" alt="">
-                        <h6>Kruvaze Yaka Desenli Elbise</h6>
-                        <p>&#8378;149</p>
+
+
                     </div>
-                    <div id="1238" class="product">
-                        <img src="/assets/prodcut101.jpeg" alt="">
-                        <h6>Kadın Günlük Çizme</h6>
-                        <p>&#8378;179</p>
-                    </div>
-                    <div id="1239" class="product">
-                        <img src="/assets/product201.jpeg" alt="">
-                        <h6>Kadın Topuklu Bot</h6>
-                        <p>&#8378;149</p>
-                    </div>
-                    <div id="1237" class="product">
-                        <img src="/assets/product7.jpg" alt="">
-                        <h6>Kısakol Elbise</h6>
-                        <p>&#8378;99</p>
-                    </div>
-                    <div id="1236" class="product">
-                        <img src="/assets/product6.jpg" alt="">
-                        <h6>Bel Lastikli Fitilli Pantolon</h6>
-                        <p>&#8378;49</p>
-                    </div>
-                    <div id="1232" class="product">
-                        <img src="/assets/product3.jpg" alt="">
-                        <h6>YEŞİL BOYUNDAN BAĞLAMALI BÜSTİYER</h6>
-                        <p>&#8378;29</p>
-                    </div>
-                    <div id="12310" class="product">
-                        <img src="/assets/product300.jpg" alt="">
-                        <h6>BEJ DESİRE PUSH UP BRALET</h6>
-                        <p>&#8378;179</p>
+
+
+                    <hr>
+
+                </div>
+                <div>
+                    <div style="max-width: 400px;" class="sonGezdiklerim onerilenSection">
+
+                        <span>Son Gezdiklerim</span>
+
+                        <div class=" onerilenWrapper">
+                            <div id="1236" class="product">
+                                <img src="/assets/product6.jpg" alt="">
+                                <h6>Bel Lastikli Fitilli Pantolon</h6>
+                                <p>&#8378;49</p>
+                                <div class="son btn row">
+                                    <button id="1236" onclick="cartNumbers(this), reload() ">Sepete Ekle</button>
+                                </div>
+                            </div>
+                            <div id="1232" class="product">
+                                <img src="/assets/product3.jpg" alt="">
+                                <h6>YEŞİL BOYUNDAN BAĞLAMALI BÜSTİYER</h6>
+                                <p>&#8378;29</p>
+                                <div class=" son btn row">
+                                    <button id="1231" onclick="cartNumbers(this), reload() ">Sepete Ekle</button>
+                                </div>
+                            </div>
+                            <div id="1235" class="product">
+                                <img src="/assets/product5.jpg" alt="">
+                                <h6>Kruvaze Yaka Desenli Elbise</h6>
+                                <p>&#8378;149</p>
+                                <div class="son btn row">
+                                    <button id="1235" onclick="cartNumbers(this), reload() ">Sepete Ekle</button>
+                                </div>
+                            </div>
+                            <div id="1238" class="product">
+                                <img src="/assets/prodcut101.jpeg" alt="">
+                                <h6>Kadın Günlük Çizme</h6>
+                                <p>&#8378;179</p>
+                                <div class="son btn row">
+                                    <button id="1238" onclick="cartNumbers(this),reload() ">Sepete Ekle</button>
+                                </div>
+                            </div>
+                            <div id="12310" class="product">
+                                <img src="/assets/product300.jpg" alt="">
+                                <h6>BEJ DESİRE PUSH UP BRALET</h6>
+                                <p>&#8378;179</p>
+                                <div class="son btn row">
+                                    <button id="12310" onclick="cartNumbers(this),reload()">Sepete
+                                        Ekle</button>
+                                </div>
+                            </div>
+                            <div id="1239" class="product">
+                                <img src="/assets/product201.jpeg" alt="">
+                                <h6>Kadın Topuklu Bot</h6>
+                                <p>&#8378;149</p>
+                                <div class="son btn row">
+                                    <button id="1239" onclick="cartNumbers(this),reload() ">Sepete Ekle</button>
+                                </div>
+                            </div>
+                            <div id="1237" class="product">
+                                <img src="/assets/product7.jpg" alt="">
+                                <h6>Kısakol Elbise</h6>
+                                <p>&#8378;99</p>
+                                <div class="son btn row">
+                                    <button id="1237" onclick="cartNumbers(this),reload() ">Sepete Ekle</button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-
-
             </div>
+        </div>
+
+
+
+
+
+
+        <div class="onerilenSection">
+
+            <span>BEĞENEBİLECEĞİNİZ <strong>DİĞER ÜRÜNLER</strong></span>
+
+            <div class="onerilenWrapper">
+                <div id="1235" class="product">
+                    <img src="/assets/product5.jpg" alt="">
+                    <h6>Kruvaze Yaka Desenli Elbise</h6>
+                    <p>&#8378;149</p>
+                </div>
+                <div id="1238" class="product">
+                    <img src="/assets/prodcut101.jpeg" alt="">
+                    <h6>Kadın Günlük Çizme</h6>
+                    <p>&#8378;179</p>
+                </div>
+                <div id="1239" class="product">
+                    <img src="/assets/product201.jpeg" alt="">
+                    <h6>Kadın Topuklu Bot</h6>
+                    <p>&#8378;149</p>
+                </div>
+                <div id="1237" class="product">
+                    <img src="/assets/product7.jpg" alt="">
+                    <h6>Kısakol Elbise</h6>
+                    <p>&#8378;99</p>
+                </div>
+                <div id="1236" class="product">
+                    <img src="/assets/product6.jpg" alt="">
+                    <h6>Bel Lastikli Fitilli Pantolon</h6>
+                    <p>&#8378;49</p>
+                </div>
+                <div id="1232" class="product">
+                    <img src="/assets/product3.jpg" alt="">
+                    <h6>YEŞİL BOYUNDAN BAĞLAMALI BÜSTİYER</h6>
+                    <p>&#8378;29</p>
+                </div>
+                <div id="12310" class="product">
+                    <img src="/assets/product300.jpg" alt="">
+                    <h6>BEJ DESİRE PUSH UP BRALET</h6>
+                    <p>&#8378;179</p>
+                </div>
+            </div>
+
 
         </div>
 
@@ -227,7 +322,6 @@
                 <img style="height: auto;" src="/assets/indirimbanner.jpg" class="img-fluid" alt="Responsive image">
             </a>
         </div>
-
 
         <footer>
             <div class="container">
@@ -284,6 +378,16 @@
 
         </footer>
     </div>
+    </section>
+    </div>
+    </div>
+
+    </div>
+    </div>
+
+
+
+
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -294,7 +398,6 @@
         integrity="sha512-7b1FfB2MGnB65aK6jrbS8k3REB+8bEE8UfP/TEwacejD0g02nLLI1VL4IPcKyiLk2lf7HJWaUYEUWc65aqaXQg=="
         crossorigin="anonymous"></script>
     <script src="index.js"></script>
-    <script src="productDetail.js"></script>
 </body>
 
 </html>

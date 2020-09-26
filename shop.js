@@ -173,4 +173,4 @@ function openNav() {
 function closeNav() {
   document.getElementById("filterBar").style.width = "0";
   document.getElementById("shopSection").style.marginLeft = "0";
-}
+} //

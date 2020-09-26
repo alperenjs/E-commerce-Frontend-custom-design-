@@ -111,44 +111,10 @@ var FadeTransition = Barba.BaseTransition.extend({
  * Next step, you have to tell Barba to use the new Transition
  */
 Barba.Pjax.getTransition = function () {
-  /**
-   * Here you can use your own logic!
-   * For example you can use different Transition based on the current page or link...
-   */
   window.scrollTo(0, 0);
   return FadeTransition;
 };
-//BARBA
-
-//slider-arrow-deneme
-// const slider = document.querySelector(".sliderContents");
-// let isDown = false;
-// let startX;
-// let scrollLeft;
-
-// slider.addEventListener("mousedown", (e) => {
-//   isDown = true;
-//   slider.classList.add("active");
-//   startX = e.pageX - slider.offsetLeft;
-//   scrollLeft = slider.scrollLeft;
-// });
-// slider.addEventListener("mouseleave", () => {
-//   isDown = false;
-//   slider.classList.remove("active");
-// });
-// slider.addEventListener("mouseup", () => {
-//   isDown = false;
-//   slider.classList.remove("active");
-// });
-// slider.addEventListener("mousemove", (e) => {
-//   if (!isDown) return;
-//   e.preventDefault();
-//   const x = e.pageX - slider.offsetLeft;
-//   const walk = (x - startX) * 0.8; //scroll-fast
-//   slider.scrollLeft = scrollLeft - walk;
-// });
-//slider-arrow-deneme
-//önerilen kısmı hold to scroll
+//
 {
   const onerilen = document.querySelector(".onerilenWrapper");
   let isDown = false;
@@ -180,3 +146,232 @@ Barba.Pjax.getTransition = function () {
 }
 
 //sidebar deneme //
+
+//shop CART
+
+function onLoadCartNumbers() {
+  let productNumbers = localStorage.getItem("cartNumbers");
+  if (productNumbers) {
+    document.querySelector(".shopCartIcon span").textContent = productNumbers;
+  }
+}
+
+function cartNumbers(item) {
+  var access = item.id;
+  fetch("products.json")
+    .then((res) => res.json())
+    .then((data) => {
+      //   console.log(data);
+
+      var adding = data.find((item) => item.id === access);
+      setItems(adding);
+    });
+  let productNumbers = localStorage.getItem("cartNumbers");
+  productNumbers = parseInt(productNumbers);
+  if (productNumbers) {
+    localStorage.setItem("cartNumbers", productNumbers + 1);
+    document.querySelector(".shopCartIcon span").textContent =
+      productNumbers + 1;
+  } else {
+    localStorage.setItem("cartNumbers", 1);
+    document.querySelector(".shopCartIcon span").textContent = 1;
+  }
+}
+
+function setItems(adding) {
+  let cartItems = localStorage.getItem("productsInCart");
+  cartItems = JSON.parse(cartItems);
+
+  if (cartItems != null) {
+    if (cartItems[adding.id] == undefined) {
+      cartItems = {
+        ...cartItems,
+        [adding.id]: adding,
+      };
+    }
+
+    cartItems[adding.id].inCart += 1;
+  } else {
+    adding.inCart = 1;
+    cartItems = {
+      [adding.id]: adding,
+    };
+  }
+  localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+  totalCost(adding);
+}
+
+function totalCost(adding) {
+  let cartCost = localStorage.getItem("totalCost");
+
+  if (cartCost != null) {
+    cartCost = parseInt(cartCost);
+    localStorage.setItem("totalCost", cartCost + adding.price);
+  } else {
+    localStorage.setItem("totalCost", adding.price);
+  }
+}
+
+function displayCart() {
+  window.scrollTo(0, 0);
+  let cartItems = localStorage.getItem("productsInCart");
+  cartItems = JSON.parse(cartItems);
+  let cartCost = localStorage.getItem("totalCost");
+  let productContainer = document.querySelector(".products");
+
+  if (cartItems && productContainer) {
+    productContainer.innerHTML = "";
+    Object.values(cartItems).map((item) => {
+      productContainer.innerHTML += `    <div class="row product">
+      <div class="col">
+          <img src="${item.img}" height="100px"> </div>
+
+      <div class="col productName">${item.title}</div>
+      <div class="col">
+          <i class="fas fa-arrow-circle-left"></i> ${item.inCart} <i class="fas fa-arrow-circle-right"></i>
+      </div>
+      <div class="col">	&#8378;${item.price}</div>
+      <div class="col"><i class="fas fa-times"></i></div>
+  </div> `;
+    });
+    productContainer.innerHTML += `
+    <div class="totalCost">
+    <div class="row">
+        <span>Toplam</span>
+        <span>${cartCost}</span>
+    </div>
+</div>
+<div class="btn row">
+    <button>Alışverişi Tamamla</button>
+</div>
+     `;
+  }
+}
+
+onLoadCartNumbers();
+displayCart();
+
+//shop CART
+
+//toast
+function show() {
+  console.log("works");
+  toast.create({
+    title: "Ürün Başarıyla Eklendi",
+    // text: "Some text",
+  });
+}
+
+(function (root, factory) {
+  try {
+    // commonjs
+    if (typeof exports === "object") {
+      module.exports = factory();
+      // global
+    } else {
+      root.toast = factory();
+    }
+  } catch (error) {
+    console.log(
+      "Isomorphic compatibility is not supported at this time for toast."
+    );
+  }
+})(this, function () {
+  // We need DOM to be ready
+  if (document.readyState === "complete") {
+    init();
+  } else {
+    window.addEventListener("DOMContentLoaded", init);
+  }
+
+  // Create toast object
+  toast = {
+    // In case toast creation is attempted before dom has finished loading!
+    create: function () {
+      console.error(
+        [
+          "DOM has not finished loading.",
+          "\tInvoke create method when DOMs readyState is complete",
+        ].join("\n")
+      );
+    },
+  };
+  var autoincrement = 0;
+
+  // Initialize library
+  function init() {
+    // Toast container
+    var container = document.createElement("div");
+    container.id = "cooltoast-container";
+    document.body.appendChild(container);
+
+    // @Override
+    // Replace create method when DOM has finished loading
+    toast.create = function (options) {
+      var toast = document.createElement("div");
+      toast.id = ++autoincrement;
+      toast.id = "toast-" + toast.id;
+      toast.className = "cooltoast-toast";
+
+      // title
+      if (options.title) {
+        var h4 = document.createElement("h4");
+        h4.className = "cooltoast-title";
+        h4.innerHTML = options.title;
+        toast.appendChild(h4);
+      }
+
+      // text
+      if (options.text) {
+        var p = document.createElement("p");
+        p.className = "cooltoast-text";
+        p.innerHTML = options.text;
+        toast.appendChild(p);
+      }
+
+      // icon
+      if (options.icon) {
+        var img = document.createElement("img");
+        img.src = options.icon;
+        img.className = "cooltoast-icon";
+        toast.appendChild(img);
+      }
+
+      // click callback
+      if (typeof options.callback === "function") {
+        toast.addEventListener("click", options.callback);
+      }
+
+      // toast api
+      toast.hide = function () {
+        toast.className += " cooltoast-fadeOut";
+        toast.addEventListener("animationend", removeToast, false);
+      };
+
+      // autohide
+      if (options.timeout) {
+        setTimeout(toast.hide, options.timeout);
+      }
+      // else setTimeout(toast.hide, 2000);
+
+      if (options.type) {
+        toast.className += " cooltoast-" + options.type;
+      }
+
+      toast.addEventListener("click", toast.hide);
+
+      function removeToast() {
+        document.getElementById("cooltoast-container").removeChild(toast);
+      }
+
+      document.getElementById("cooltoast-container").appendChild(toast);
+      return toast;
+    };
+  }
+
+  return toast;
+});
+
+function reload() {
+  location.reload();
+}

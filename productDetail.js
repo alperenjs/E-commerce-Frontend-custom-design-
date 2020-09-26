@@ -9,35 +9,17 @@ function GetParameterByName(name, url) {
 }
 
 var pass = GetParameterByName("pass");
-console.log(pass);
+// console.log(pass);
 
 function load_content(pass) {
   fetch("products.json")
     .then((res) => res.json())
     .then((data) => {
       //   console.log(data);
-      //Id'ye göre veri çekme
-
-      //aşağı satır filter 'shoe' kind içerenleri çekiyor
-      //   let newData = [];
-      //   let filterValue = "shoe";
-
-      //   for (let value in data) {
-      //     if (data[value].kind === filterValue) {
-      //.price >= fiyat diyip fiyat da kategoriliyebiliyoruz
-      //       newData.push(data[value]);
-      //     }
-      //   }
-      //   console.log(newData);
-      //aynı kind ürünleir yukarda çekip bu foreach ile sayafaya yazdırcaz
-      //   newData.forEach((urun) => {
-      //     console.log(urun);
-      //   });
-      //
 
       var item = data.find((item) => item.id === pass);
-      console.log(item);
-      console.log("Loading content for {" + pass + "}");
+      // console.log(item);
+      // console.log("Loading content for {" + pass + "}");
 
       var output = `
                 <div class="row">
@@ -67,13 +49,13 @@ function load_content(pass) {
                         <p>Beden</p>
                         <div class="sizeWrapper">
                             <p>34</p>
-                            <p>36</p>
+                            <p>36</p>0
                             <p>39</p>
 
                         </div>
                     </div>
                     <div class="btn row">
-                        <button>Sepete Ekle</button>
+                        <button id="${pass}" onclick="cartNumbers(this), show()" >Sepete Ekle</button>
                     </div>
                     <div class="detail row">
                         <span>Ürün Detayı</span>
@@ -99,7 +81,7 @@ function gallery() {
   // gallery is the name of function
 
   var allimages = document.images;
-  console.log(allimages);
+  // console.log(allimages);
   //now we create a variable allimages
   //and we store all images in this allimages variable
   for (var i = 0; i < allimages.length; i++) {
@@ -144,6 +126,16 @@ function imgChanger() {
     const x = e.pageX - onerilen.offsetLeft;
     const walk = (x - startX) * 3; //scroll-fast
     onerilen.scrollLeft = scrollLeft - walk;
-    console.log(walk);
+    // console.log(walk);
   });
 }
+
+var storageProducts = [
+  {
+    title: "",
+    kind: "",
+    img: "",
+    price: "",
+    inCart: 0,
+  },
+];

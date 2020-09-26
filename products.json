@@ -7,7 +7,8 @@
     "img1": "/assets/product71.jpg",
     "img2": "/assets/productNone.jpg",
     "detail": "%100 Cotton.",
-    "price": 99.9
+    "price": 99,
+    "inCart": 0
   },
 
   {
@@ -18,7 +19,8 @@
     "img1": "/assets/product41.jpg",
     "img2": "/assets/product42.jpg",
     "detail": "Kumaş Bilgisi: % 90 Pamuk % 10 Elastan.  15 gün içerisinde koşulsuz iade.",
-    "price": 149.9
+    "price": 149,
+    "inCart": 0
   },
 
   {
@@ -29,7 +31,8 @@
     "img1": "/assets/product61.jpg",
     "img2": "/assets/productNone.jpg",
     "detail": "%95 Polyester %5 Elestan.",
-    "price": 49.9
+    "price": 49,
+    "inCart": 0
   },
   {
     "id": "1231",
@@ -39,7 +42,8 @@
     "img1": "/assets/product21.jpg",
     "img2": "/assets/product22.jpg",
     "detail": "Kumaş Bilgisi: % 90 Pamuk % 10 Elastan.  15 gün içerisinde koşulsuz iade.",
-    "price": 177.9
+    "price": 177,
+    "inCart": 0
   },
   {
     "id": "1232",
@@ -49,7 +53,8 @@
     "img1": "/assets/product31.jpg",
     "img2": "/assets/product32.jpg",
     "detail": "Kumaş Bilgisi: % 90 Pamuk % 10 Elastan.  15 gün içerisinde koşulsuz iade.",
-    "price": 29.9
+    "price": 29,
+    "inCart": 0
   },
 
   {
@@ -60,7 +65,8 @@
     "img1": "/assets/product11.jpg",
     "img2": "/assets/product12.jpg",
     "detail": "Kumaş Bilgisi: % 90 Pamuk % 10 Elastan.  15 gün içerisinde koşulsuz iade.",
-    "price": 54.9
+    "price": 54,
+    "inCart": 0
   },
   {
     "id": "1235",
@@ -70,7 +76,8 @@
     "img1": "/assets/product51.jpg",
     "img2": "/assets/productNone.jpg",
     "detail": "%70 Cotton %30 Polyester. Normal Kalıp.",
-    "price": 149.9
+    "price": 149,
+    "inCart": 0
   },
   {
     "id": "1236666",
@@ -80,7 +87,8 @@
     "img1": "/assets/product81.jpg",
     "img2": "/assets/productNone.jpg",
     "detail": "%50 Viskon %50 Polyester. Normal kalıp.",
-    "price": 12.9
+    "price": 12,
+    "inCart": 0
   },
   {
     "id": "12377",
@@ -90,7 +98,8 @@
     "img1": "/assets/product91.jpg",
     "img2": "/assets/productNone.jpg",
     "detail": "%70 Cotton %30 Polyester. Normal Kalıp.",
-    "price": 149.9
+    "price": 149,
+    "inCart": 0
   },
   {
     "id": "1238",
@@ -100,7 +109,8 @@
     "img1": "/assets/prodcut101.jpeg",
     "img2": "/assets/product102.jpeg",
     "detail": "%100 Deri.",
-    "price": 179.99
+    "price": 1299,
+    "inCart": 0
   },
   {
     "id": "1239",
@@ -110,7 +120,8 @@
     "img1": "/assets/product202.jpeg",
     "img2": "/assets/productNone.jpg",
     "detail": "%100 Deri.",
-    "price": 219.9
+    "price": 219,
+    "inCart": 0
   },
   {
     "id": "12310",
@@ -120,7 +131,8 @@
     "img1": "/assets/product301.jpg",
     "img2": "/assets/productNone.jpg",
     "detail": "POLYAMIDE %88,ELASTANE %12.",
-    "price": 179.99
+    "price": 1799,
+    "inCart": 0
   },
   {
     "id": "12311",
@@ -130,7 +142,8 @@
     "img2": "/assets/product402.jpg",
     "img1": "/assets/product401.jpg",
     "detail": "%100 Deri.",
-    "price": 149.9
+    "price": 149,
+    "inCart": 0
   },
   {
     "id": "12312",
@@ -140,7 +153,8 @@
     "img1": "/assets/product501.jpg",
     "img2": "/assets/productNone.jpg",
     "detail": "Smooth Lace String Külot.",
-    "price": 24.9
+    "price": 24,
+    "inCart": 0
   },
   {
     "id": "12313",
@@ -150,7 +164,8 @@
     "img2": "/assets/product602.jpg",
     "img1": "/assets/product601.jpg",
     "detail": "POLYAMIDE %84,ELASTANE %16.",
-    "price": 149.9
+    "price": 149,
+    "inCart": 0
   },
   {
     "id": "12315",
@@ -160,7 +175,8 @@
     "img1": "/assets/product801.jpg",
     "img2": "/assets/productNone.jpg",
     "detail": "ÇOK RENKLİ DAİLY TOKA SET",
-    "price": 14.9
+    "price": 14,
+    "inCart": 0
   },
   {
     "id": "12316",
@@ -170,6 +186,7 @@
     "img1": "/assets/product801.jpg",
     "img2": "/assets/productNone.jpg",
     "detail": "ÇOK RENKLİ MOON BANDANA.",
-    "price": 24.9
+    "price": 24,
+    "inCart": 0
   }
 ]
