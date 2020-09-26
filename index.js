@@ -200,6 +200,40 @@ function setItems(adding) {
   localStorage.setItem("productsInCart", JSON.stringify(cartItems));
   totalCost(adding);
 }
+function decreaseItems(adding) {
+  let cartItems = localStorage.getItem("productsInCart");
+  cartItems = JSON.parse(cartItems);
+
+  if (cartItems[adding.id].inCart > 0) {
+    cartItems[adding.id].inCart -= 1;
+  } else {
+    return;
+  }
+
+  localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+
+  let cartCost = localStorage.getItem("totalCost");
+  cartCost = parseInt(cartCost);
+
+  let urunfiyat = cartItems[adding.id].price;
+
+  if (cartCost > 0) {
+    localStorage.setItem("totalCost", cartCost - urunfiyat);
+  } else {
+    return;
+  }
+
+  let productNumbers = localStorage.getItem("cartNumbers");
+  productNumbers = parseInt(productNumbers);
+
+  if (productNumbers) {
+    localStorage.setItem("cartNumbers", productNumbers - 1);
+    document.querySelector(".shopCartIcon span").textContent =
+      productNumbers - 1;
+  } else {
+    return;
+  }
+}
 
 function totalCost(adding) {
   let cartCost = localStorage.getItem("totalCost");
@@ -228,17 +262,17 @@ function displayCart() {
 
       <div class="col productName">${item.title}</div>
       <div class="col">
-          <i class="fas fa-arrow-circle-left"></i> ${item.inCart} <i class="fas fa-arrow-circle-right"></i>
+          <i id=${item.id} onclick="decreaseItems(this), reload()" class="fas fa-arrow-circle-left"></i> ${item.inCart} <i id="${item.id}" onclick="cartNumbers(this), reload()" class="fas fa-arrow-circle-right"></i>
       </div>
       <div class="col">	&#8378;${item.price}</div>
-      <div class="col"><i class="fas fa-times"></i></div>
+   
   </div> `;
     });
     productContainer.innerHTML += `
     <div class="totalCost">
     <div class="row">
         <span>Toplam</span>
-        <span>${cartCost}</span>
+        <span>	&#8378;${cartCost}</span>
     </div>
 </div>
 <div class="btn row">
@@ -248,11 +282,21 @@ function displayCart() {
   }
 }
 
+function removeItems() {
+  localStorage.clear();
+  location.reload();
+}
+
 onLoadCartNumbers();
 displayCart();
 
 //shop CART
 
+//
+//
+//
+//
+//
 //toast
 function show() {
   console.log("works");

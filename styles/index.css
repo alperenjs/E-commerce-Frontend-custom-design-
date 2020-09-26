@@ -648,6 +648,8 @@ footer .container .row {
   letter-spacing: 2px;
   font-weight: 800;
   font-size: 29px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .shoppingCart-container .row.header {
