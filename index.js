@@ -419,3 +419,10 @@ function show() {
 function reload() {
   location.reload();
 }
+
+//nav link to shop
+document.querySelectorAll(".shopLink").forEach((item) => {
+  item.addEventListener("click", (event) => {
+    window.location.href = "/shop.html";
+  });
+});

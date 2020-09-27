@@ -514,3 +514,44 @@
   }
 }
 // toast
+
+//search
+
+.match-list {
+  text-decoration: none;
+  font-family: $product;
+  background-color: transparent;
+  position: absolute;
+  z-index: 999;
+  padding-top: 63px;
+  right: 0;
+  .matched {
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    small {
+      font-family: sans-serif;
+      padding-left: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .match-list {
+    padding-top: 63px;
+    left: 0;
+    top: 254px;
+  }
+}
+
+.shopLink {
+  cursor: pointer;
+}
+
+li.shopLink {
+  cursor: pointer;
+}

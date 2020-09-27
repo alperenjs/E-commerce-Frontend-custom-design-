@@ -147,12 +147,15 @@
                                 <a class="nav-link " href="#"><strong> Blog </strong></a>
                             </li>
                         </ul>
-                        <form class="form-inline my-2 my-lg-0">
+                        <div class="form-inline my-2 my-lg-0">
                             <div>
-                                <i class="fas fa-search"></i><input class="navSearch form-control mr-sm-2" type="search"
+                                <i class="fas fa-search"></i>
+                                <input id="search" class="navSearch form-control mr-sm-2" type="search"
                                     placeholder="Ürün bul" aria-label="Search">
                             </div>
-                        </form>
+                        </div>
+
+
 
                     </div>
                 </nav>
@@ -164,6 +167,7 @@
                     </a>
                 </div>
             </div>
+            <div class="match-list" id="match-list"></div>
             <div class="discountBanner banner">
                 <a href="#">
                     <img style="height: auto;" src="/assets/longdiscount.jpg" class="img-fluid" alt="Responsive image">
@@ -401,6 +405,7 @@
         integrity="sha512-7b1FfB2MGnB65aK6jrbS8k3REB+8bEE8UfP/TEwacejD0g02nLLI1VL4IPcKyiLk2lf7HJWaUYEUWc65aqaXQg=="
         crossorigin="anonymous"></script>
     <script src="index.js"></script>
+    <script src="search.js"></script>
 </body>
 
 </html>
