@@ -423,6 +423,10 @@ function reload() {
 //nav link to shop
 document.querySelectorAll(".shopLink").forEach((item) => {
   item.addEventListener("click", (event) => {
-    window.location.href = "/shop.html";
+    window.location.href = "shop.html";
   });
+});
+
+document.getElementById("goToShop").addEventListener("click", (event) => {
+  window.location.href = "shop.html";
 });
