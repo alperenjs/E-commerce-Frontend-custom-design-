@@ -49,7 +49,7 @@ function load_content(pass) {
                         <p>Beden</p>
                         <div class="sizeWrapper">
                             <p>34</p>
-                            <p>36</p>0
+                            <p>36</p>
                             <p>39</p>
 
                         </div>

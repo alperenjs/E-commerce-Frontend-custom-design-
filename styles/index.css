@@ -804,31 +804,31 @@ footer .container .row {
 }
 
 .kidSection .section1.section {
-  background: url(assets/kids2.jpg);
+  background: url(../assets/kids2.jpg);
   background-position-x: left !important;
 }
 
 .kidSection .section2.section {
-  background: url(assets/kids1.jpg);
+  background: url(../assets/kids1.jpg);
   background-position-x: center !important;
 }
 
 .womanSection .section1.section {
-  background: url(assets/woman1.jpg);
+  background: url(../assets/woman1.jpg);
 }
 
 .womanSection .section2.section {
-  background: url(assets/woman2.jpg);
+  background: url(../assets/woman2.jpg);
   background-position-x: left !important;
 }
 
 .manSection .section1.section {
-  background: url(assets/men2.jpg);
+  background: url(../assets/men2.jpg);
   background-position-x: left !important;
 }
 
 .manSection .section2.section {
-  background: url(assets/man1.jpg);
+  background: url(../assets/man1.jpg);
   background-position-x: center !important;
 }
 
@@ -989,23 +989,23 @@ footer .container .row {
     background-position-y: bottom !important;
   }
   .kidSection .section1.section {
-    background: url(assets/kids2portrait.jpg);
+    background: url(../assets/kids2portrait.jpg);
   }
   .kidSection .section2.section {
-    background: url(assets/kid1portrait.jpg);
+    background: url(../assets/kid1portrait.jpg);
   }
   .womanSection .section1.section {
-    background: url(assets/woman1portrait.jpg);
+    background: url(../assets/woman1portrait.jpg);
   }
   .womanSection .section2.section {
-    background: url(assets/woman2portrait.jpg);
+    background: url(../assets/woman2portrait.jpg);
     background-position-x: inherit !important;
   }
   .manSection .section1.section {
-    background: url(assets/men2port.jpg);
+    background: url(../assets/men2port.jpg);
   }
   .manSection .section2.section {
-    background: url(assets/man1port.jpg);
+    background: url(../assets/man1port.jpg);
     background-position-x: inherit !important;
   }
 }
