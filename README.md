@@ -1,5 +1,5 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
-&nbsp; [Live Demo](https://alperenkarate.github.io/E-commerce/)
+&nbsp; [Live Demo](https://alperenkarate.github.io/E-commerce-Frontend-custom-design-/.)
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
